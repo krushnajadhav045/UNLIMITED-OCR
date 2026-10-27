@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlimited-OCR | Document Parsing</title>
+  <meta name="description" content="Unlimited-OCR extracts, previews, and exports structured content from PDFs and images.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <div class="hero-eyebrow"><span aria-hidden="true">✦</span> UNLIMITED-OCR · DOCUMENT PARSING</div>
+          <h1>Turn documents into <span>structured data</span></h1>
+          <p>Extract readable text and detected content from PDFs, invoices, receipts, and scanned documents.</p>
+        </div>
+        <div class="hero-stats" aria-label="Current document statistics">
+          <div><strong id="blocksMetric">0</strong><span>Parsed blocks</span></div>
+          <div><strong id="pagesMetric">0</strong><span>Pages</span></div>
+          <div><strong id="tablesMetric">0</strong><span>Tables found</span></div>
+        </div>
+        <div class="live-status-pill" id="statusPill"><span class="status-dot"></span><span id="statusText">Ready</span></div>
+      </section>
+
+      <section class="intake-card" aria-labelledby="intakeTitle">
+        <div class="intake-heading">
+          <div class="intake-icon" aria-hidden="true">⇧</div>
+          <div>
+            <h2 id="intakeTitle">Document intake &amp; processing</h2>
+            <p>Upload a file or drag it into this area to get started. Scanned files may take a little longer on first use.</p>
+          </div>
+          <div class="file-types" aria-label="Supported file types"><span>PDF</span><span>PNG</span><span>JPG</span><span>WEBP</span><span>TIFF</span></div>
+        </div>
+        <div class="intake-content">
+          <div class="drop-zone" id="uploadDropzone" tabindex="0" role="button" aria-label="Choose a PDF or image file">
+            <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg,.webp,.tif,.tiff,application/pdf,image/png,image/jpeg,image/webp,image/tiff">
+            <div class="drop-icon" aria-hidden="true">⇧</div>
+            <div class="drop-copy"><strong>Drop your document here</strong><span>or <button id="btnBrowse" type="button" class="text-button">browse files</button> from your computer</span></div>
+            <button id="btnChooseFile" type="button" class="btn btn-primary">Choose document</button>
+          </div>
+          <div class="intake-tools">
+            <label for="docSelect" class="control-label">Or preview a sample</label>
+            <select id="docSelect" class="control-select doc-select">
+              <option value="unlimited_paper_main">Unlimited-OCR research paper</option>
+              <option value="scanned_notebook" selected>Handwritten notes</option>
+              <option value="krushna_resume">Resume sample</option>
+              <option value="page_1_abstract">Research paper: abstract page</option>
+            </select>
+            <label for="speedSelect" class="control-label">Preview speed</label>
+            <select id="speedSelect" class="control-select speed-select" title="Choose how quickly parsed content appears in the preview">
+              <option value="60">Slow</option><option value="140" selected>Normal</option><option value="300">Fast</option><option value="9999">Instant</option>
+            </select>
+            <button id="btnStart" class="btn btn-start" title="Start parsing the selected document"><span aria-hidden="true">▶</span> Start parsing</button>
+            <button id="btnStop" class="btn btn-stop" title="Pause parsing" disabled><span aria-hidden="true">Ⅱ</span> Pause</button>
+            <button id="btnReset" class="btn btn-icon" aria-label="Reset preview" title="Clear parsed results and restart the preview">↺</button>
+          </div>
+          <div id="fileSummary" class="file-summary" hidden>
+            <div class="file-type-icon" id="fileTypeIcon">PDF</div>
+            <div class="file-summary-copy"><strong id="fileName">No file selected</strong><span id="fileMeta"></span></div>
+            <button id="btnRemoveFile" class="remove-file" type="button" aria-label="Remove uploaded document" title="Remove document">×</button>
+          </div>
+        </div>
+      </section>
+
+      <div id="appNotice" class="app-notice" role="status" aria-live="polite" hidden></div>
+    </header>
+
+    <main class="results-shell">
+      <nav class="results-nav" aria-label="Document result views" role="tablist">
+        <button class="workspace-tab active" id="tabData" role="tab" aria-selected="true" aria-controls="paneData" data-pane="paneData"><span>▥</span> Key Extracted Data <b id="tabBlockCount">0</b></button>
+        <button class="workspace-tab" id="tabDocument" role="tab" aria-selected="false" aria-controls="paneDocument" data-pane="paneDocument"><span>▤</span> Document Preview</button>
+        <button class="workspace-tab" id="tabTables" role="tab" aria-selected="false" aria-controls="paneTables" data-pane="paneTables"><span>▤</span> Detected Tables <b id="tabTableCount">0</b></button>
+        <button class="workspace-tab" id="tabRaw" role="tab" aria-selected="false" aria-controls="paneRaw" data-pane="paneRaw"><span>⌕</span> OCR Raw Text</button>
+        <button class="workspace-tab" id="tabJson" role="tab" aria-selected="false" aria-controls="paneJson" data-pane="paneJson"><span>{ }</span> Structured JSON</button>
+        <button id="btnExport" class="btn btn-export-center" type="button"><span aria-hidden="true">⇩</span> Export Center</button>
+      </nav>
+
+      <div class="results-content">
+        <section class="result-pane active" id="paneData" role="tabpanel" aria-labelledby="tabData">
+          <div class="pane-heading"><div><h2>Key extracted data</h2><p>Recognized content grouped by page and detected type.</p></div><span class="pane-count" id="dataCountLabel">0 blocks</span></div>
+          <div class="layout-empty-state" id="layoutEmptyState"><div class="empty-icon">▤</div><p>No parsed content yet</p><span class="subtext">Choose a sample or upload a document, then select <strong>Start parsing</strong>.</span></div>
+          <div class="layout-pages" id="layoutPages"></div>
+        </section>
+
+        <section class="result-pane" id="paneDocument" role="tabpanel" aria-labelledby="tabDocument" hidden>
+          <div class="pane-heading"><div><h2>Document preview</h2><p>Hover over detected regions to locate matching text.</p></div>
+            <div class="panel-header-actions"><label class="toggle-switch-label" title="Toggle bounding-box overlays"><input type="checkbox" id="toggleBBoxes" checked><span class="toggle-text">Show boxes</span></label><button id="zoomOut" class="btn-tiny" title="Zoom out">−</button><span id="zoomLevel" class="zoom-text">100%</span><button id="zoomIn" class="btn-tiny" title="Zoom in">+</button></div>
+          </div>
+          <div class="document-scroll-container" id="documentViewer"><div class="pages-wrapper" id="pagesWrapper"></div></div>
+        </section>
+
+        <section class="result-pane" id="paneTables" role="tabpanel" aria-labelledby="tabTables" hidden>
+          <div class="pane-heading"><div><h2>Detected tables</h2><p>Tabular content identified in the parsed document.</p></div><span class="pane-count" id="tableCountLabel">0 tables</span></div>
+          <div id="tableResults" class="table-results"><div class="layout-empty-state"><div class="empty-icon">▦</div><p>No tables detected yet</p><span class="subtext">Detected tables will appear here after parsing.</span></div></div>
+        </section>
+
+        <section class="result-pane" id="paneRaw" role="tabpanel" aria-labelledby="tabRaw" hidden>
+          <div class="pane-heading"><div><h2>OCR raw text</h2><p>Original recognized text and detection markers.</p></div><div class="panel-header-actions"><span class="stream-indicator" id="streamIndicator">PARSING</span><button id="btnCopyRaw" class="btn-tiny" title="Copy recognized text">Copy text</button><label class="toggle-switch-label"><input type="checkbox" id="autoScroll" checked><span class="toggle-text">Auto-scroll</span></label></div></div>
+          <div class="terminal-body" id="rawTerminal"><div class="terminal-content" id="terminalContent"></div><span class="terminal-cursor" id="terminalCursor">▋</span></div>
+        </section>
+
+        <section class="result-pane" id="paneJson" role="tabpanel" aria-labelledby="tabJson" hidden>
+          <div class="pane-heading"><div><h2>Structured JSON</h2><p>Parsed blocks with page, category, text, and normalized coordinates.</p></div></div>
+          <pre class="json-code" id="jsonCode">{}</pre>
+        </section>
+      </div>
+    </main>
+
+    <dialog class="export-dialog" id="exportDialog" aria-labelledby="exportDialogTitle">
+      <div class="export-dialog-header"><div><span class="hero-eyebrow">DOWNLOAD YOUR RESULTS</span><h2 id="exportDialogTitle">Export center</h2><p>Choose the format that works best for you.</p></div><button id="btnCloseExport" class="dialog-close" type="button" aria-label="Close export center">×</button></div>
+      <div class="export-grid">
+        <article class="export-card"><div class="export-icon icon-json">{ }</div><h3>Structured JSON (.json)</h3><p>All parsed blocks, page numbers, types, text and coordinates.</p><button class="export-download" data-export-format="json">Download JSON <span>↓</span></button></article>
+        <article class="export-card"><div class="export-icon icon-excel">▥</div><h3>Excel workbook (.xlsx)</h3><p>Workbook with parsed content and detected tables on separate sheets.</p><button class="export-download" data-export-format="excel">Download Excel <span>↓</span></button></article>
+        <article class="export-card"><div class="export-icon icon-csv">▤</div><h3>CSV spreadsheet (.csv)</h3><p>Simple rows that open in Excel, Numbers, and Google Sheets.</p><button class="export-download" data-export-format="csv">Download CSV <span>↓</span></button></article>
+        <article class="export-card"><div class="export-icon icon-text">T</div><h3>Plain text (.txt)</h3><p>Clean extracted text with page breaks, ready to copy or share.</p><button class="export-download" data-export-format="txt">Download text <span>↓</span></button></article>
+        <article class="export-card"><div class="export-icon icon-markdown">✎</div><h3>Markdown (.md)</h3><p>Formatted text with headings and table content preserved.</p><button class="export-download" data-export-format="markdown">Download Markdown <span>↓</span></button></article>
+        <article class="export-card"><div class="export-icon icon-image">▧</div><h3>Page image (.png)</h3><p>Download the first rendered page image used in the document preview.</p><button class="export-download" data-export-format="png">Download PNG <span>↓</span></button></article>
+      </div>
+      <p class="export-hint">Exports become available after a document has parsed. The PNG option downloads the first rendered page.</p>
+    </dialog>
+
+    <footer class="app-footer"><div class="footer-tip">Sample documents show a simulated parsing preview. Uploaded files are processed by the local OCR service.</div></footer>
+  </div>
+
+  <script src="assets/demo_stream_data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,701 @@
+{
+  "title": "Scanned_20260907_122448.pdf",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "image": "assets/pages/scanned_p1.png",
+      "aspectRatio": 0.747,
+      "blocks": [
+        {
+          "id": "p1-b1",
+          "category": "title",
+          "bbox": [
+            108,
+            39,
+            255,
+            60
+          ],
+          "content": "FIXED:"
+        },
+        {
+          "id": "p1-b2",
+          "category": "title",
+          "bbox": [
+            115,
+            95,
+            382,
+            121
+          ],
+          "content": "customes Name:"
+        },
+        {
+          "id": "p1-b3",
+          "category": "title",
+          "bbox": [
+            146,
+            145,
+            256,
+            171
+          ],
+          "content": "Aaron"
+        },
+        {
+          "id": "p1-b4",
+          "category": "title",
+          "bbox": [
+            256,
+            149,
+            394,
+            180
+          ],
+          "content": "Begman"
+        },
+        {
+          "id": "p1-b5",
+          "category": "title",
+          "bbox": [
+            150,
+            188,
+            255,
+            212
+          ],
+          "content": "Aaron"
+        },
+        {
+          "id": "p1-b6",
+          "category": "title",
+          "bbox": [
+            243,
+            184,
+            424,
+            222
+          ],
+          "content": "Hewkings"
+        },
+        {
+          "id": "p1-b7",
+          "category": "title",
+          "bbox": [
+            148,
+            225,
+            344,
+            258
+          ],
+          "content": "Adom Heot"
+        },
+        {
+          "id": "p1-b8",
+          "category": "title",
+          "bbox": [
+            147,
+            267,
+            366,
+            301
+          ],
+          "content": "Alan Bonnes"
+        },
+        {
+          "id": "p1-b9",
+          "category": "title",
+          "bbox": [
+            152,
+            312,
+            364,
+            346
+          ],
+          "content": "Alan Hwong"
+        },
+        {
+          "id": "p1-b10",
+          "category": "title",
+          "bbox": [
+            158,
+            358,
+            401,
+            399
+          ],
+          "content": "Alon shonely"
+        },
+        {
+          "id": "p1-b11",
+          "category": "title",
+          "bbox": [
+            594,
+            455,
+            680,
+            474
+          ],
+          "content": "5001C"
+        },
+        {
+          "id": "p1-b12",
+          "category": "title",
+          "bbox": [
+            728,
+            458,
+            904,
+            482
+          ],
+          "content": "ISD0K200K"
+        },
+        {
+          "id": "p1-b13",
+          "category": "text",
+          "bbox": [
+            64,
+            480,
+            789,
+            525
+          ],
+          "content": "·Show each Customer's tofal Saleo usir"
+        },
+        {
+          "id": "p1-b14",
+          "category": "text",
+          "bbox": [
+            112,
+            524,
+            890,
+            567
+          ],
+          "content": "FrxeoD exptesio,eqeedless ofthe"
+        },
+        {
+          "id": "p1-b15",
+          "category": "text",
+          "bbox": [
+            107,
+            564,
+            521,
+            606
+          ],
+          "content": "vieuos love of detouils"
+        }
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "image": "assets/pages/scanned_p2.png",
+      "aspectRatio": 0.751,
+      "blocks": [
+        {
+          "id": "p2-b1",
+          "category": "title",
+          "bbox": [
+            50,
+            17,
+            271,
+            48
+          ],
+          "content": "2.] INCLUDE:"
+        },
+        {
+          "id": "p2-b2",
+          "category": "title",
+          "bbox": [
+            114,
+            72,
+            236,
+            101
+          ],
+          "content": "Region"
+        },
+        {
+          "id": "p2-b3",
+          "category": "title",
+          "bbox": [
+            364,
+            71,
+            506,
+            91
+          ],
+          "content": "customer"
+        },
+        {
+          "id": "p2-b4",
+          "category": "title",
+          "bbox": [
+            389,
+            93,
+            483,
+            117
+          ],
+          "content": "Zamo"
+        },
+        {
+          "id": "p2-b5",
+          "category": "title",
+          "bbox": [
+            102,
+            140,
+            214,
+            162
+          ],
+          "content": "Centrol"
+        },
+        {
+          "id": "p2-b6",
+          "category": "title",
+          "bbox": [
+            356,
+            138,
+            453,
+            166
+          ],
+          "content": "Amon"
+        },
+        {
+          "id": "p2-b7",
+          "category": "title",
+          "bbox": [
+            352,
+            173,
+            477,
+            205
+          ],
+          "content": "Adonan"
+        },
+        {
+          "id": "p2-b8",
+          "category": "title",
+          "bbox": [
+            354,
+            214,
+            436,
+            240
+          ],
+          "content": "Alon"
+        },
+        {
+          "id": "p2-b9",
+          "category": "title",
+          "bbox": [
+            355,
+            244,
+            517,
+            276
+          ],
+          "content": "Alenjandra"
+        },
+        {
+          "id": "p2-b10",
+          "category": "title",
+          "bbox": [
+            358,
+            289,
+            439,
+            314
+          ],
+          "content": "Aice"
+        },
+        {
+          "id": "p2-b11",
+          "category": "title",
+          "bbox": [
+            84,
+            370,
+            169,
+            394
+          ],
+          "content": "usi ng"
+        },
+        {
+          "id": "p2-b12",
+          "category": "title",
+          "bbox": [
+            262,
+            367,
+            398,
+            388
+          ],
+          "content": "HNCIUD"
+        },
+        {
+          "id": "p2-b13",
+          "category": "text",
+          "bbox": [
+            235,
+            374,
+            981,
+            430
+          ],
+          "content": "FxoDacwaho，othcustomes"
+        },
+        {
+          "id": "p2-b14",
+          "category": "title",
+          "bbox": [
+            197,
+            384,
+            210,
+            393
+          ],
+          "content": "C"
+        },
+        {
+          "id": "p2-b15",
+          "category": "title",
+          "bbox": [
+            72,
+            404,
+            239,
+            434
+          ],
+          "content": ": Compared"
+        },
+        {
+          "id": "p2-b16",
+          "category": "title",
+          "bbox": [
+            320,
+            411,
+            674,
+            451
+          ],
+          "content": "HheirSaeoOmunt"
+        },
+        {
+          "id": "p2-b17",
+          "category": "title",
+          "bbox": [
+            78,
+            468,
+            267,
+            510
+          ],
+          "content": "EXCLUDE:"
+        },
+        {
+          "id": "p2-b18",
+          "category": "title",
+          "bbox": [
+            98,
+            532,
+            243,
+            584
+          ],
+          "content": "Reobao"
+        },
+        {
+          "id": "p2-b19",
+          "category": "title",
+          "bbox": [
+            347,
+            557,
+            570,
+            592
+          ],
+          "content": "Sub cateqon"
+        },
+        {
+          "id": "p2-b20",
+          "category": "title",
+          "bbox": [
+            326,
+            606,
+            493,
+            639
+          ],
+          "content": "Bookcooes"
+        },
+        {
+          "id": "p2-b21",
+          "category": "title",
+          "bbox": [
+            105,
+            626,
+            253,
+            656
+          ],
+          "content": "Fuuniture"
+        },
+        {
+          "id": "p2-b22",
+          "category": "title",
+          "bbox": [
+            614,
+            622,
+            740,
+            654
+          ],
+          "content": "11,S,361"
+        },
+        {
+          "id": "p2-b23",
+          "category": "title",
+          "bbox": [
+            333,
+            632,
+            435,
+            667
+          ],
+          "content": "chair"
+        },
+        {
+          "id": "p2-b24",
+          "category": "title",
+          "bbox": [
+            609,
+            653,
+            743,
+            688
+          ],
+          "content": "85L'5EE"
+        },
+        {
+          "id": "p2-b25",
+          "category": "title",
+          "bbox": [
+            325,
+            663,
+            454,
+            694
+          ],
+          "content": "Tablo"
+        },
+        {
+          "id": "p2-b26",
+          "category": "title",
+          "bbox": [
+            610,
+            684,
+            749,
+            717
+          ],
+          "content": "2b.0po"
+        },
+        {
+          "id": "p2-b27",
+          "category": "title",
+          "bbox": [
+            123,
+            691,
+            233,
+            722
+          ],
+          "content": "o"
+        },
+        {
+          "id": "p2-b28",
+          "category": "title",
+          "bbox": [
+            340,
+            703,
+            421,
+            731
+          ],
+          "content": "Asts"
+        },
+        {
+          "id": "p2-b29",
+          "category": "title",
+          "bbox": [
+            607,
+            718,
+            735,
+            749
+          ],
+          "content": "27,659"
+        },
+        {
+          "id": "p2-b30",
+          "category": "title",
+          "bbox": [
+            117,
+            725,
+            257,
+            758
+          ],
+          "content": "86039"
+        },
+        {
+          "id": "p2-b31",
+          "category": "title",
+          "bbox": [
+            346,
+            731,
+            504,
+            765
+          ],
+          "content": "Bindeas"
+        },
+        {
+          "id": "p2-b32",
+          "category": "title",
+          "bbox": [
+            366,
+            759,
+            463,
+            784
+          ],
+          "content": "popS"
+        },
+        {
+          "id": "p2-b33",
+          "category": "title",
+          "bbox": [
+            110,
+            770,
+            279,
+            836
+          ],
+          "content": "Rbaauya"
+        },
+        {
+          "id": "p2-b34",
+          "category": "title",
+          "bbox": [
+            616,
+            776,
+            733,
+            809
+          ],
+          "content": "74541"
+        },
+        {
+          "id": "p2-b35",
+          "category": "title",
+          "bbox": [
+            356,
+            787,
+            491,
+            822
+          ],
+          "content": "Copiers'"
+        },
+        {
+          "id": "p2-b36",
+          "category": "title",
+          "bbox": [
+            612,
+            811,
+            745,
+            848
+          ],
+          "content": "156,745"
+        },
+        {
+          "id": "p2-b37",
+          "category": "title",
+          "bbox": [
+            355,
+            821,
+            473,
+            853
+          ],
+          "content": "phono"
+        },
+        {
+          "id": "p2-b38",
+          "category": "title",
+          "bbox": [
+            49,
+            854,
+            178,
+            883
+          ],
+          "content": "·show"
+        },
+        {
+          "id": "p2-b39",
+          "category": "title",
+          "bbox": [
+            608,
+            850,
+            751,
+            889
+          ],
+          "content": "331,843"
+        },
+        {
+          "id": "p2-b40",
+          "category": "title",
+          "bbox": [
+            203,
+            864,
+            290,
+            893
+          ],
+          "content": "each"
+        },
+        {
+          "id": "p2-b41",
+          "category": "title",
+          "bbox": [
+            307,
+            875,
+            546,
+            922
+          ],
+          "content": "swb-cateqoy"
+        },
+        {
+          "id": "p2-b42",
+          "category": "title",
+          "bbox": [
+            67,
+            887,
+            286,
+            944
+          ],
+          "content": "R"
+        },
+        {
+          "id": "p2-b43",
+          "category": "text",
+          "bbox": [
+            588,
+            903,
+            999,
+            961
+          ],
+          "content": "Saleocohileexcludin"
+        },
+        {
+          "id": "p2-b44",
+          "category": "title",
+          "bbox": [
+            309,
+            910,
+            644,
+            982
+          ],
+          "content": "Robaeoduo"
+        },
+        {
+          "id": "p2-b45",
+          "category": "title",
+          "bbox": [
+            88,
+            936,
+            193,
+            969
+          ],
+          "content": "Scleo."
+        },
+        {
+          "id": "p2-b46",
+          "category": "title",
+          "bbox": [
+            660,
+            955,
+            729,
+            979
+          ],
+          "content": "Cos"
+        },
+        {
+          "id": "p2-b47",
+          "category": "title",
+          "bbox": [
+            755,
+            960,
+            960,
+            998
+          ],
+          "content": "Sub.catea"
+        }
+      ]
+    }
+  ]
+}

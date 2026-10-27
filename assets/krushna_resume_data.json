@@ -1,0 +1,716 @@
+{
+  "title": "Krushna_GenAi_Resume.pdf",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "image": "assets/pages/krushna_resume_p1.png",
+      "aspectRatio": 0.7068793426296783,
+      "blocks": [
+        {
+          "id": "p1-b1",
+          "category": "title",
+          "bbox": [
+            77,
+            62,
+            564,
+            99
+          ],
+          "content": "KRUSHNA JADHAV"
+        },
+        {
+          "id": "p1-b2",
+          "category": "title",
+          "bbox": [
+            77,
+            116,
+            323,
+            132
+          ],
+          "content": "Python GenAI Engineer"
+        },
+        {
+          "id": "p1-b3",
+          "category": "title",
+          "bbox": [
+            765,
+            23,
+            911,
+            38
+          ],
+          "content": "+91 7821871883"
+        },
+        {
+          "id": "p1-b4",
+          "category": "text",
+          "bbox": [
+            697,
+            60,
+            901,
+            75
+          ],
+          "content": "kjpatil045@gmail.com"
+        },
+        {
+          "id": "p1-b5",
+          "category": "text",
+          "bbox": [
+            726,
+            96,
+            904,
+            110
+          ],
+          "content": "Chh.Sambhajinagar"
+        },
+        {
+          "id": "p1-b6",
+          "category": "text",
+          "bbox": [
+            59,
+            136,
+            915,
+            173
+          ],
+          "content": "www.linkedin.com/in/krushna-jadhav-2183a3267"
+        },
+        {
+          "id": "p1-b7",
+          "category": "title",
+          "bbox": [
+            425,
+            220,
+            582,
+            238
+          ],
+          "content": "SUMMARY"
+        },
+        {
+          "id": "p1-b8",
+          "category": "text",
+          "bbox": [
+            70,
+            256,
+            956,
+            284
+          ],
+          "content": "Entry-Level Python GenAI Engineer with hands-on experience building AI-powered applications using Python, \nFastAPI, Generative AI, OCR, RAG, and LangChain. Experienced in developing REST APIs, integrating LLMs for"
+        },
+        {
+          "id": "p1-b9",
+          "category": "text",
+          "bbox": [
+            71,
+            287,
+            956,
+            299
+          ],
+          "content": "intelligent text extraction and conversational applications, and building AI-driven automation solutions. Familiar"
+        },
+        {
+          "id": "p1-b10",
+          "category": "text",
+          "bbox": [
+            210,
+            304,
+            818,
+            316
+          ],
+          "content": "with Docker, CI/CD, LangSmith, prompt engineering, and AI/ML workflows."
+        },
+        {
+          "id": "p1-b11",
+          "category": "title",
+          "bbox": [
+            74,
+            366,
+            256,
+            385
+          ],
+          "content": "EDUCATION"
+        },
+        {
+          "id": "p1-b12",
+          "category": "text",
+          "bbox": [
+            74,
+            413,
+            382,
+            426
+          ],
+          "content": "Deogiri Collage Chh.Sambhajinagar"
+        },
+        {
+          "id": "p1-b13",
+          "category": "text",
+          "bbox": [
+            74,
+            432,
+            308,
+            456
+          ],
+          "content": "Bachelor's Of Computer Application \n2022-2025"
+        },
+        {
+          "id": "p1-b14",
+          "category": "text",
+          "bbox": [
+            74,
+            486,
+            382,
+            499
+          ],
+          "content": "Deogiri Collage Chh.Sambhajinagar"
+        },
+        {
+          "id": "p1-b15",
+          "category": "text",
+          "bbox": [
+            59,
+            505,
+            298,
+            557
+          ],
+          "content": "Master’s Of Computer Application \n2025-2027"
+        },
+        {
+          "id": "p1-b16",
+          "category": "title",
+          "bbox": [
+            74,
+            563,
+            180,
+            581
+          ],
+          "content": "SKILLS"
+        },
+        {
+          "id": "p1-b17",
+          "category": "text",
+          "bbox": [
+            90,
+            595,
+            344,
+            606
+          ],
+          "content": "Languages: Python, SQL, JavaScript"
+        },
+        {
+          "id": "p1-b18",
+          "category": "text",
+          "bbox": [
+            90,
+            609,
+            324,
+            620
+          ],
+          "content": "ML & AI: Machine Learning, Deep"
+        },
+        {
+          "id": "p1-b19",
+          "category": "text",
+          "bbox": [
+            102,
+            623,
+            333,
+            633
+          ],
+          "content": "Learning, NLP, Generative AI, RAG"
+        },
+        {
+          "id": "p1-b20",
+          "category": "text",
+          "bbox": [
+            90,
+            637,
+            362,
+            647
+          ],
+          "content": "Frameworks: FastAPI, Flask, Streamlit,"
+        },
+        {
+          "id": "p1-b21",
+          "category": "text",
+          "bbox": [
+            102,
+            651,
+            250,
+            661
+          ],
+          "content": "LangChain, REST-API"
+        },
+        {
+          "id": "p1-b22",
+          "category": "text",
+          "bbox": [
+            90,
+            665,
+            354,
+            676
+          ],
+          "content": "Libraries: Scikit-learn, Pandas, NumPy,"
+        },
+        {
+          "id": "p1-b23",
+          "category": "text",
+          "bbox": [
+            102,
+            679,
+            335,
+            689
+          ],
+          "content": "TensorFlow/PyTorch ,LangGraph"
+        },
+        {
+          "id": "p1-b24",
+          "category": "text",
+          "bbox": [
+            90,
+            694,
+            351,
+            704
+          ],
+          "content": "MLOps: Docker, MLflow, CI/CD,OCR"
+        },
+        {
+          "id": "p1-b25",
+          "category": "text",
+          "bbox": [
+            90,
+            707,
+            378,
+            717
+          ],
+          "content": "Data Tools: Databricks, SQL Server, ETL"
+        },
+        {
+          "id": "p1-b26",
+          "category": "text",
+          "bbox": [
+            102,
+            721,
+            167,
+            731
+          ],
+          "content": "Pipelines"
+        },
+        {
+          "id": "p1-b27",
+          "category": "text",
+          "bbox": [
+            90,
+            735,
+            342,
+            745
+          ],
+          "content": "Visualization: Power BI, Matplotlib,"
+        },
+        {
+          "id": "p1-b28",
+          "category": "text",
+          "bbox": [
+            102,
+            749,
+            158,
+            759
+          ],
+          "content": "Seaborn"
+        },
+        {
+          "id": "p1-b29",
+          "category": "text",
+          "bbox": [
+            90,
+            763,
+            300,
+            774
+          ],
+          "content": "Cloud: Microsoft Azure, AWS"
+        },
+        {
+          "id": "p1-b30",
+          "category": "text",
+          "bbox": [
+            90,
+            777,
+            322,
+            787
+          ],
+          "content": "Tools: Postman, LangSmith, n8n"
+        },
+        {
+          "id": "p1-b31",
+          "category": "title",
+          "bbox": [
+            74,
+            835,
+            327,
+            853
+          ],
+          "content": "CERTIFICATIONS"
+        },
+        {
+          "id": "p1-b32",
+          "category": "text",
+          "bbox": [
+            88,
+            861,
+            332,
+            871
+          ],
+          "content": "Oracle Cloud Infrastructure 2025"
+        },
+        {
+          "id": "p1-b33",
+          "category": "title",
+          "bbox": [
+            100,
+            874,
+            343,
+            885
+          ],
+          "content": "Certified Data Science Professional"
+        },
+        {
+          "id": "p1-b34",
+          "category": "text",
+          "bbox": [
+            88,
+            889,
+            299,
+            899
+          ],
+          "content": "Python Certification – GUVI"
+        },
+        {
+          "id": "p1-b35",
+          "category": "text",
+          "bbox": [
+            88,
+            903,
+            326,
+            913
+          ],
+          "content": "ChatGPT Prompt Engineering for"
+        },
+        {
+          "id": "p1-b36",
+          "category": "text",
+          "bbox": [
+            100,
+            917,
+            309,
+            927
+          ],
+          "content": "Developers – DeepLearning.AI"
+        },
+        {
+          "id": "p1-b37",
+          "category": "text",
+          "bbox": [
+            88,
+            931,
+            348,
+            941
+          ],
+          "content": "Career Essentials in Data Analysis –"
+        },
+        {
+          "id": "p1-b38",
+          "category": "text",
+          "bbox": [
+            100,
+            945,
+            254,
+            955
+          ],
+          "content": "Microsoft & LinkedIn"
+        },
+        {
+          "id": "p1-b39",
+          "category": "title",
+          "bbox": [
+            479,
+            327,
+            610,
+            345
+          ],
+          "content": "PROJECT"
+        },
+        {
+          "id": "p1-b40",
+          "category": "text",
+          "bbox": [
+            479,
+            369,
+            874,
+            382
+          ],
+          "content": "MediGrid AI – Prescription Analysis System"
+        },
+        {
+          "id": "p1-b41",
+          "category": "text",
+          "bbox": [
+            505,
+            391,
+            963,
+            401
+          ],
+          "content": "Developed an AI-powered system to extract medicine details from"
+        },
+        {
+          "id": "p1-b42",
+          "category": "text",
+          "bbox": [
+            519,
+            405,
+            963,
+            429
+          ],
+          "content": "handwritten prescriptions using OCR and image processing \ntechniques"
+        },
+        {
+          "id": "p1-b43",
+          "category": "text",
+          "bbox": [
+            505,
+            433,
+            912,
+            443
+          ],
+          "content": "Built scalable REST APIs using FastAPI to process and store"
+        },
+        {
+          "id": "p1-b44",
+          "category": "text",
+          "bbox": [
+            519,
+            447,
+            861,
+            457
+          ],
+          "content": "structured prescription data in a SQLite database"
+        },
+        {
+          "id": "p1-b45",
+          "category": "text",
+          "bbox": [
+            505,
+            461,
+            941,
+            471
+          ],
+          "content": "Integrated Gemini AI for intelligent text extraction and medical"
+        },
+        {
+          "id": "p1-b46",
+          "category": "text",
+          "bbox": [
+            519,
+            475,
+            645,
+            485
+          ],
+          "content": "entity recognition"
+        },
+        {
+          "id": "p1-b47",
+          "category": "text",
+          "bbox": [
+            505,
+            489,
+            924,
+            499
+          ],
+          "content": "Implemented automated safety checks to generate alerts for"
+        },
+        {
+          "id": "p1-b48",
+          "category": "text",
+          "bbox": [
+            519,
+            503,
+            813,
+            513
+          ],
+          "content": "incorrect dosages and potential drug risks"
+        },
+        {
+          "id": "p1-b49",
+          "category": "text",
+          "bbox": [
+            505,
+            517,
+            962,
+            527
+          ],
+          "content": "Enabled pharmacy accessibility by generating location-based links"
+        },
+        {
+          "id": "p1-b50",
+          "category": "text",
+          "bbox": [
+            494,
+            531,
+            929,
+            555
+          ],
+          "content": "for nearby medical stores \nTechnologies: Python, FastAPI, Gemini AI, OCR (Tesseract), SQLite"
+        },
+        {
+          "id": "p1-b51",
+          "category": "text",
+          "bbox": [
+            475,
+            583,
+            899,
+            614
+          ],
+          "content": "AI-Based Document Automation Pipeline – BPCL \nCGD/LMC"
+        },
+        {
+          "id": "p1-b52",
+          "category": "text",
+          "bbox": [
+            490,
+            625,
+            968,
+            667
+          ],
+          "content": "• \nDeveloped a Python-based pipeline to process 1,400+ scanned \nPDFs using AWS Textract and convert extracted data into \nExcel."
+        },
+        {
+          "id": "p1-b53",
+          "category": "text",
+          "bbox": [
+            490,
+            678,
+            968,
+            706
+          ],
+          "content": "• \nBuilt OCR parsing and validation logic for 100+ document \nformats."
+        },
+        {
+          "id": "p1-b54",
+          "category": "text",
+          "bbox": [
+            490,
+            717,
+            968,
+            746
+          ],
+          "content": "• \nAutomated document processing using AWS S3, Lambda, \nSNS, and Textract."
+        },
+        {
+          "id": "p1-b55",
+          "category": "text",
+          "bbox": [
+            490,
+            757,
+            968,
+            785
+          ],
+          "content": "• \nUsed Pandas and OpenPyXL for data cleaning, transformation, \nand Excel generation."
+        },
+        {
+          "id": "p1-b56",
+          "category": "text",
+          "bbox": [
+            490,
+            796,
+            931,
+            811
+          ],
+          "content": "• \nReduced manual data-entry effort from hours to minutes."
+        },
+        {
+          "id": "p1-b57",
+          "category": "text",
+          "bbox": [
+            476,
+            825,
+            968,
+            849
+          ],
+          "content": "Technologies: Python, AWS Textract, AWS Lambda, Amazon S3, \nAmazon SNS, Pandas, OpenPyXL, OCR, ETL, Excel Automation"
+        },
+        {
+          "id": "p1-b58",
+          "category": "title",
+          "bbox": [
+            476,
+            866,
+            660,
+            884
+          ],
+          "content": "EXPERIENCE"
+        },
+        {
+          "id": "p1-b59",
+          "category": "text",
+          "bbox": [
+            475,
+            900,
+            579,
+            913
+          ],
+          "content": "Naresh IT"
+        },
+        {
+          "id": "p1-b60",
+          "category": "text",
+          "bbox": [
+            505,
+            929,
+            910,
+            939
+          ],
+          "content": "Data Science & Gen AI Intern (Trainee) – [Omkar"
+        },
+        {
+          "id": "p1-b61",
+          "category": "text",
+          "bbox": [
+            519,
+            941,
+            544,
+            951
+          ],
+          "content": "Sir]"
+        },
+        {
+          "id": "p1-b62",
+          "category": "text",
+          "bbox": [
+            505,
+            953,
+            909,
+            964
+          ],
+          "content": "Gained practical experience in data analysis, ML"
+        },
+        {
+          "id": "p1-b63",
+          "category": "text",
+          "bbox": [
+            519,
+            966,
+            774,
+            976
+          ],
+          "content": "models, and prompt engineering."
+        },
+        {
+          "id": "p1-b64",
+          "category": "text",
+          "bbox": [
+            505,
+            978,
+            878,
+            988
+          ],
+          "content": "Built mini projects using Python and AI tools."
+        }
+      ]
+    }
+  ]
+}
