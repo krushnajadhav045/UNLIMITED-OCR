@@ -12,7 +12,7 @@ import base64
 import email
 import pymupdf
 
-PORT = 8080
+PORT = int(os.environ.get("PORT", "8080"))
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 UPLOADS_DIR = os.path.join(DIRECTORY, "assets", "uploads")
 os.makedirs(UPLOADS_DIR, exist_ok=True)
