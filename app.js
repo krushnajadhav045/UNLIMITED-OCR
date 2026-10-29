@@ -144,9 +144,11 @@
       }
     });
 
-    document.querySelectorAll('.workspace-tab').forEach(tab => {
+    document.querySelectorAll('.workspace-tab[data-pane], .sidebar-section[data-pane]').forEach(tab => {
       tab.addEventListener('click', () => switchTab(tab.dataset.pane));
     });
+
+    document.getElementById('sideTabExport').addEventListener('click', () => exportDialog.showModal());
 
     // Copy Raw
     btnCopyRaw.addEventListener('click', async () => {
@@ -350,10 +352,22 @@
   }
 
   function switchTab(paneId) {
-    document.querySelectorAll('.workspace-tab').forEach(tab => {
+    const pane = document.getElementById(paneId);
+    if (!pane || !pane.classList.contains('result-pane')) return;
+
+    document.querySelectorAll('.workspace-tab[data-pane]').forEach(tab => {
       const selected = tab.dataset.pane === paneId;
       tab.classList.toggle('active', selected);
       tab.setAttribute('aria-selected', String(selected));
+    });
+    document.querySelectorAll('.sidebar-section[data-pane]').forEach(tab => {
+      const selected = tab.dataset.pane === paneId;
+      tab.classList.toggle('active', selected);
+      if (selected) {
+        tab.setAttribute('aria-current', 'page');
+      } else {
+        tab.removeAttribute('aria-current');
+      }
     });
     document.querySelectorAll('.result-pane').forEach(pane => {
       const selected = pane.id === paneId;
@@ -361,6 +375,7 @@
       pane.hidden = !selected;
     });
     if (paneId === 'paneJson') renderJsonView();
+    pane.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   /**
